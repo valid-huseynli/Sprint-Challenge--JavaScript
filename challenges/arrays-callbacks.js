@@ -32,11 +32,11 @@ console.log(displayNames);
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
-
+animalArray = []
 zooAnimals.map((item )=> {
-  console.log (item.animal_name.toLowerCase())
+ animalArray.push(item.animal_name.toLowerCase())
 })
-
+console.log(animalArray)
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
@@ -80,12 +80,12 @@ function consume(a,b,cb){
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-function add(num1,num2){
-  return num1 + num2;
+function add(number1,number2){
+  return number1 + number2;
 }
 
-function multiply(num1,num2){
-  return num1 * num2;
+function multiply(number1,number2){
+  return number1 * number2;
 }
 
 function greeting(firstName, lastName){
